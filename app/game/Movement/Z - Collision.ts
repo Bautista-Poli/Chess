@@ -1,0 +1,1 @@
+// Tengo que pasar todas las funciones de colision a este archivo

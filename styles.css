@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    background-image: url(https://lh4.googleusercontent.com/proxy/n-6HM8Gj_wIpmb6ySGrVUBiMrz-eo-xNeUIPOh_xxnZLgiiYMrNK-uP5i6IEfqhJdPyYa1FI27P-01HsyCtekSZXWn47Eo3x_wxHzdjVKlbVzLT4lRy8i0RubTJeh7vrJxQ4UxNIHdQHOyVf5w);
+    background-size: cover; /* or specify width and height */
+    background-repeat: no-repeat;
+    width: 1300px; /* Set width of the html element */
+    height: 120vh; /* Set height of the html element (in this case, full viewport height) */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}

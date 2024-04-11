@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+<div class="board">
+
+        <img src="https://www.kroger.com/product/images/large/front/0065895668721" class="boardDiv">
+        <div *ngFor="let row of toObjectKeys(board)">
+            <div class="{{row}}">
+                <div *ngFor="let piece of board[row]">
+                    <app-piece (pieceClicked)="onPieceClicked($event)" [image]="piece.image" class="{{piece.class}}"  id="{{piece.id}}" [pieceRol]="piece.pieceRol"></app-piece>
+                </div>
+            </div>
+        </div>
+    
+    <div [class]="getResultado()" >
+        <div class="modal">
+          <div class="head">
+            <a class="btn-close trigger" href="#">
+              <i class="fa fa-times" aria-hidden="true" (click)="setResultado()"> Cerrar </i>
+            </a>
+          </div>
+          <div class="content">
+              <div class="good-job">
+                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                <h1>Ganaste</h1>
+              </div>
+          </div>
+        </div>
+      </div>
+</div>
